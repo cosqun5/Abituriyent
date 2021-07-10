@@ -1,0 +1,576 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB2C9F67-437F-46CE-9345-EA65E3A2F1F6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Abituriyent</RootNamespace>
+    <AssemblyName>Abituriyent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44390</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\pages\error\error-349d8.css" />
+    <Content Include="assets\css\pages\error\error-449d8.css" />
+    <Content Include="assets\css\pages\error\error-549d8.css" />
+    <Content Include="assets\css\pages\error\error-649d8.css" />
+    <Content Include="assets\css\pages\invoice\invoice-649d8.css" />
+    <Content Include="assets\css\pages\login\classic\login-149d8.css" />
+    <Content Include="assets\css\pages\login\classic\login-249d8.css" />
+    <Content Include="assets\css\pages\login\classic\login-349d8.css" />
+    <Content Include="assets\css\pages\login\classic\login-449d8.css" />
+    <Content Include="assets\css\pages\login\classic\login-549d8.css" />
+    <Content Include="assets\css\pages\login\classic\login-649d8.css" />
+    <Content Include="assets\css\pages\login\login-149d8.css" />
+    <Content Include="assets\css\pages\login\login-249d8.css" />
+    <Content Include="assets\css\pages\login\login-349d8.css" />
+    <Content Include="assets\css\pages\login\login-449d8.css" />
+    <Content Include="assets\css\pages\wizard\wizard-149d8.css" />
+    <Content Include="assets\css\pages\wizard\wizard-249d8.css" />
+    <Content Include="assets\css\pages\wizard\wizard-349d8.css" />
+    <Content Include="assets\css\pages\wizard\wizard-449d8.css" />
+    <Content Include="assets\css\pages\wizard\wizard-549d8.css" />
+    <Content Include="assets\css\pages\wizard\wizard-649d8.css" />
+    <Content Include="assets\css\style.bundle49d8.css" />
+    <Content Include="assets\css\themes\layout\aside\dark49d8.css" />
+    <Content Include="assets\css\themes\layout\aside\light49d8.css" />
+    <Content Include="assets\css\themes\layout\brand\dark49d8.css" />
+    <Content Include="assets\css\themes\layout\brand\light49d8.css" />
+    <Content Include="assets\css\themes\layout\header\base\dark49d8.css" />
+    <Content Include="assets\css\themes\layout\header\base\light49d8.css" />
+    <Content Include="assets\css\themes\layout\header\menu\dark49d8.css" />
+    <Content Include="assets\css\themes\layout\header\menu\light49d8.css" />
+    <Content Include="assets\js\pages\builder49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\advanced\column-rendering49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\advanced\column-visibility49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\advanced\footer-callback49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\advanced\multiple-controls49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\advanced\row-callback49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\advanced\row-grouping49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\basic\basic49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\basic\headers49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\basic\paginations49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\basic\scrollable49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\data-sources\ajax-client-side49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\data-sources\ajax-server-side49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\data-sources\html49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\data-sources\javascript49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\buttons49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\colreorder49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\keytable49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\responsive49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\rowgroup49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\rowreorder49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\scroller49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\extensions\select49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\search-options\advanced-search49d8.js" />
+    <Content Include="assets\js\pages\crud\datatables\search-options\column-search49d8.js" />
+    <Content Include="assets\js\pages\crud\file-upload\dropzonejs49d8.js" />
+    <Content Include="assets\js\pages\crud\file-upload\image-input49d8.js" />
+    <Content Include="assets\js\pages\crud\file-upload\uppy49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\bootstrap-markdown49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\ckeditor-balloon-block49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\ckeditor-balloon49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\ckeditor-classic49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\ckeditor-document49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\ckeditor-inline49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\quill49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\summernote49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\editors\tinymce49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\validation\form-controls49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\validation\form-widgets49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\autosize49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-datepicker49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-daterangepicker49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-datetimepicker49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-maxlength49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-multipleselectsplitter49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-select49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-switch49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-timepicker49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\bootstrap-touchspin49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\clipboard49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\form-repeater49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\input-mask49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\ion-range-slider49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\jquery-mask49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\nouislider49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\select249d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\tagify49d8.js" />
+    <Content Include="assets\js\pages\crud\forms\widgets\typeahead49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\advanced\column-rendering49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\advanced\column-width49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\advanced\modal49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\advanced\record-selection49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\advanced\row-details49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\advanced\vertical49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\api\events49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\api\methods49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\base\data-ajax49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\base\data-json49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\base\data-local49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\base\html-table49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\base\local-sort49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\base\translation49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\child\data-ajax49d8.js" />
+    <Content Include="assets\js\pages\crud\ktdatatable\child\data-local49d8.js" />
+    <Content Include="assets\js\pages\custom\chat\chat49d8.js" />
+    <Content Include="assets\js\pages\custom\contacts\add-contact49d8.js" />
+    <Content Include="assets\js\pages\custom\contacts\edit-contact49d8.js" />
+    <Content Include="assets\js\pages\custom\contacts\list-columns49d8.js" />
+    <Content Include="assets\js\pages\custom\contacts\list-datatable49d8.js" />
+    <Content Include="assets\js\pages\custom\ecommerce\checkout49d8.js" />
+    <Content Include="assets\js\pages\custom\education\school\calendar49d8.js" />
+    <Content Include="assets\js\pages\custom\education\school\library49d8.js" />
+    <Content Include="assets\js\pages\custom\education\school\students49d8.js" />
+    <Content Include="assets\js\pages\custom\education\school\teachers49d8.js" />
+    <Content Include="assets\js\pages\custom\education\student\calendar49d8.js" />
+    <Content Include="assets\js\pages\custom\education\student\profile49d8.js" />
+    <Content Include="assets\js\pages\custom\inbox\inbox49d8.js" />
+    <Content Include="assets\js\pages\custom\login\login-349d8.js" />
+    <Content Include="assets\js\pages\custom\login\login-449d8.js" />
+    <Content Include="assets\js\pages\custom\login\login-general49d8.js" />
+    <Content Include="assets\js\pages\custom\profile\profile49d8.js" />
+    <Content Include="assets\js\pages\custom\projects\add-project49d8.js" />
+    <Content Include="assets\js\pages\custom\projects\list-datatable49d8.js" />
+    <Content Include="assets\js\pages\custom\todo\todo49d8.js" />
+    <Content Include="assets\js\pages\custom\user\add-user49d8.js" />
+    <Content Include="assets\js\pages\custom\user\edit-user49d8.js" />
+    <Content Include="assets\js\pages\custom\user\list-datatable49d8.js" />
+    <Content Include="assets\js\pages\custom\wizard\wizard-149d8.js" />
+    <Content Include="assets\js\pages\custom\wizard\wizard-249d8.js" />
+    <Content Include="assets\js\pages\custom\wizard\wizard-349d8.js" />
+    <Content Include="assets\js\pages\custom\wizard\wizard-449d8.js" />
+    <Content Include="assets\js\pages\custom\wizard\wizard-549d8.js" />
+    <Content Include="assets\js\pages\custom\wizard\wizard-649d8.js" />
+    <Content Include="assets\js\pages\features\calendar\background-events49d8.js" />
+    <Content Include="assets\js\pages\features\calendar\basic49d8.js" />
+    <Content Include="assets\js\pages\features\calendar\external-events49d8.js" />
+    <Content Include="assets\js\pages\features\calendar\google49d8.js" />
+    <Content Include="assets\js\pages\features\calendar\list-view49d8.js" />
+    <Content Include="assets\js\pages\features\cards\draggable49d8.js" />
+    <Content Include="assets\js\pages\features\cards\tools49d8.js" />
+    <Content Include="assets\js\pages\features\charts\amcharts\charts49d8.js" />
+    <Content Include="assets\js\pages\features\charts\amcharts\maps49d8.js" />
+    <Content Include="assets\js\pages\features\charts\amcharts\stock-charts49d8.js" />
+    <Content Include="assets\js\pages\features\charts\apexcharts49d8.js" />
+    <Content Include="assets\js\pages\features\charts\flotcharts49d8.js" />
+    <Content Include="assets\js\pages\features\charts\google-charts49d8.js" />
+    <Content Include="assets\js\pages\features\custom\spinners49d8.js" />
+    <Content Include="assets\js\pages\features\maps\google-maps49d8.js" />
+    <Content Include="assets\js\pages\features\maps\jqvmap49d8.js" />
+    <Content Include="assets\js\pages\features\maps\leaflet49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\blockui49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\bootstrap-notify49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\cropper49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\dual-listbox49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\idle-timer49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\kanban-board49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\session-timeout49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\sticky-panels49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\sweetalert249d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\toastr49d8.js" />
+    <Content Include="assets\js\pages\features\miscellaneous\treeview49d8.js" />
+    <Content Include="assets\js\pages\widgets49d8.js" />
+    <Content Include="assets\js\scripts.bundle49d8.js" />
+    <Content Include="assets\media\bg\bg-1.jpg" />
+    <Content Include="assets\media\bg\bg-2.jpg" />
+    <Content Include="assets\media\bg\bg-3.jpg" />
+    <Content Include="assets\media\bg\bg-4.jpg" />
+    <Content Include="assets\media\bg\bg-6.jpg" />
+    <Content Include="assets\media\bg\bg-8.jpg" />
+    <Content Include="assets\media\bg\bg-9.jpg" />
+    <Content Include="assets\media\bg\bg-invoice-5.jpg" />
+    <Content Include="assets\media\books\12.png" />
+    <Content Include="assets\media\books\13.png" />
+    <Content Include="assets\media\books\4.png" />
+    <Content Include="assets\media\demos\demo1.png" />
+    <Content Include="assets\media\demos\demo10.png" />
+    <Content Include="assets\media\demos\demo11.png" />
+    <Content Include="assets\media\demos\demo12.png" />
+    <Content Include="assets\media\demos\demo13.png" />
+    <Content Include="assets\media\demos\demo14.png" />
+    <Content Include="assets\media\demos\demo15.png" />
+    <Content Include="assets\media\demos\demo16.png" />
+    <Content Include="assets\media\demos\demo17.png" />
+    <Content Include="assets\media\demos\demo18.png" />
+    <Content Include="assets\media\demos\demo19.png" />
+    <Content Include="assets\media\demos\demo2.png" />
+    <Content Include="assets\media\demos\demo20.png" />
+    <Content Include="assets\media\demos\demo21.png" />
+    <Content Include="assets\media\demos\demo22.png" />
+    <Content Include="assets\media\demos\demo23.png" />
+    <Content Include="assets\media\demos\demo24.png" />
+    <Content Include="assets\media\demos\demo25.png" />
+    <Content Include="assets\media\demos\demo26.png" />
+    <Content Include="assets\media\demos\demo27.png" />
+    <Content Include="assets\media\demos\demo28.png" />
+    <Content Include="assets\media\demos\demo29.png" />
+    <Content Include="assets\media\demos\demo3.png" />
+    <Content Include="assets\media\demos\demo30.png" />
+    <Content Include="assets\media\demos\demo4.png" />
+    <Content Include="assets\media\demos\demo5.png" />
+    <Content Include="assets\media\demos\demo6.png" />
+    <Content Include="assets\media\demos\demo7.png" />
+    <Content Include="assets\media\demos\demo8.png" />
+    <Content Include="assets\media\demos\demo9.png" />
+    <Content Include="assets\media\error\bg1.jpg" />
+    <Content Include="assets\media\error\bg2.jpg" />
+    <Content Include="assets\media\error\bg3.jpg" />
+    <Content Include="assets\media\error\bg4.jpg" />
+    <Content Include="assets\media\error\bg5.jpg" />
+    <Content Include="assets\media\error\bg6.jpg" />
+    <Content Include="assets\media\logos\logo-1.png" />
+    <Content Include="assets\media\logos\logo-4.png" />
+    <Content Include="assets\media\logos\logo-dark.png" />
+    <Content Include="assets\media\logos\logo-letter-1.png" />
+    <Content Include="assets\media\logos\logo-letter-13.png" />
+    <Content Include="assets\media\logos\logo-letter-9.png" />
+    <Content Include="assets\media\logos\logo-light.png" />
+    <Content Include="assets\media\logos\logo.png" />
+    <Content Include="assets\media\logos\stars.png" />
+    <Content Include="assets\media\misc\bg-1.jpg" />
+    <Content Include="assets\media\products\1.png" />
+    <Content Include="assets\media\products\11.png" />
+    <Content Include="assets\media\products\12.png" />
+    <Content Include="assets\media\products\13.png" />
+    <Content Include="assets\media\products\14.png" />
+    <Content Include="assets\media\products\15.png" />
+    <Content Include="assets\media\products\16.png" />
+    <Content Include="assets\media\products\17.png" />
+    <Content Include="assets\media\products\18.png" />
+    <Content Include="assets\media\products\19.png" />
+    <Content Include="assets\media\products\2.png" />
+    <Content Include="assets\media\products\20.png" />
+    <Content Include="assets\media\products\21.png" />
+    <Content Include="assets\media\products\22.png" />
+    <Content Include="assets\media\products\3.png" />
+    <Content Include="assets\media\products\4.png" />
+    <Content Include="assets\media\products\5.png" />
+    <Content Include="assets\media\products\6.png" />
+    <Content Include="assets\media\products\7.png" />
+    <Content Include="assets\media\products\8.png" />
+    <Content Include="assets\media\products\9.png" />
+    <Content Include="assets\media\project-logos\1.png" />
+    <Content Include="assets\media\project-logos\2.png" />
+    <Content Include="assets\media\project-logos\3.png" />
+    <Content Include="assets\media\project-logos\4.png" />
+    <Content Include="assets\media\project-logos\5.png" />
+    <Content Include="assets\media\project-logos\6.png" />
+    <Content Include="assets\media\project-logos\7.png" />
+    <Content Include="assets\media\stock-600x400\img-1.jpg" />
+    <Content Include="assets\media\stock-600x400\img-10.jpg" />
+    <Content Include="assets\media\stock-600x400\img-11.jpg" />
+    <Content Include="assets\media\stock-600x400\img-12.jpg" />
+    <Content Include="assets\media\stock-600x400\img-17.jpg" />
+    <Content Include="assets\media\stock-600x400\img-18.jpg" />
+    <Content Include="assets\media\stock-600x400\img-19.jpg" />
+    <Content Include="assets\media\stock-600x400\img-2.jpg" />
+    <Content Include="assets\media\stock-600x400\img-20.jpg" />
+    <Content Include="assets\media\stock-600x400\img-22.jpg" />
+    <Content Include="assets\media\stock-600x400\img-23.jpg" />
+    <Content Include="assets\media\stock-600x400\img-24.jpg" />
+    <Content Include="assets\media\stock-600x400\img-25.jpg" />
+    <Content Include="assets\media\stock-600x400\img-26.jpg" />
+    <Content Include="assets\media\stock-600x400\img-28.jpg" />
+    <Content Include="assets\media\stock-600x400\img-3.jpg" />
+    <Content Include="assets\media\stock-600x400\img-39.jpg" />
+    <Content Include="assets\media\stock-600x400\img-4.jpg" />
+    <Content Include="assets\media\stock-600x400\img-5.jpg" />
+    <Content Include="assets\media\stock-600x400\img-6.jpg" />
+    <Content Include="assets\media\stock-600x400\img-7.jpg" />
+    <Content Include="assets\media\stock-600x400\img-70.jpg" />
+    <Content Include="assets\media\stock-600x400\img-72.jpg" />
+    <Content Include="assets\media\stock-600x400\img-8.jpg" />
+    <Content Include="assets\media\stock-600x400\img-9.jpg" />
+    <Content Include="assets\media\stock-600x600\img-12.jpg" />
+    <Content Include="assets\media\stock-600x600\img-15.jpg" />
+    <Content Include="assets\media\stock-600x600\img-16.jpg" />
+    <Content Include="assets\media\stock-600x600\img-9.jpg" />
+    <Content Include="assets\media\stock-900x600\19.jpg" />
+    <Content Include="assets\media\stock-900x600\3.jpg" />
+    <Content Include="assets\media\users\100_1.jpg" />
+    <Content Include="assets\media\users\100_10.jpg" />
+    <Content Include="assets\media\users\100_11.jpg" />
+    <Content Include="assets\media\users\100_12.jpg" />
+    <Content Include="assets\media\users\100_13.jpg" />
+    <Content Include="assets\media\users\100_14.jpg" />
+    <Content Include="assets\media\users\100_2.jpg" />
+    <Content Include="assets\media\users\100_3.jpg" />
+    <Content Include="assets\media\users\100_4.jpg" />
+    <Content Include="assets\media\users\100_5.jpg" />
+    <Content Include="assets\media\users\100_6.jpg" />
+    <Content Include="assets\media\users\100_8.jpg" />
+    <Content Include="assets\media\users\100_9.jpg" />
+    <Content Include="assets\media\users\300_1.jpg" />
+    <Content Include="assets\media\users\300_10.jpg" />
+    <Content Include="assets\media\users\300_11.jpg" />
+    <Content Include="assets\media\users\300_12.jpg" />
+    <Content Include="assets\media\users\300_13.jpg" />
+    <Content Include="assets\media\users\300_14.jpg" />
+    <Content Include="assets\media\users\300_15.jpg" />
+    <Content Include="assets\media\users\300_16.jpg" />
+    <Content Include="assets\media\users\300_17.jpg" />
+    <Content Include="assets\media\users\300_18.jpg" />
+    <Content Include="assets\media\users\300_19.jpg" />
+    <Content Include="assets\media\users\300_2.jpg" />
+    <Content Include="assets\media\users\300_20.jpg" />
+    <Content Include="assets\media\users\300_21.jpg" />
+    <Content Include="assets\media\users\300_22.jpg" />
+    <Content Include="assets\media\users\300_23.jpg" />
+    <Content Include="assets\media\users\300_24.jpg" />
+    <Content Include="assets\media\users\300_25.jpg" />
+    <Content Include="assets\media\users\300_3.jpg" />
+    <Content Include="assets\media\users\300_7.jpg" />
+    <Content Include="assets\media\users\blank.png" />
+    <Content Include="assets\plugins\custom\ckeditor\ckeditor-balloon-block.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\ckeditor\ckeditor-balloon.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\ckeditor\ckeditor-classic.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\ckeditor\ckeditor-document.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\ckeditor\ckeditor-inline.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\cropper\cropper.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\datatables\datatables.bundle49d8.css" />
+    <Content Include="assets\plugins\custom\datatables\datatables.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\draggable\draggable.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\flot\flot.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\fullcalendar\fullcalendar.bundle49d8.css" />
+    <Content Include="assets\plugins\custom\fullcalendar\fullcalendar.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\gmaps\gmaps49d8.js" />
+    <Content Include="assets\plugins\custom\jqvmap\jqvmap.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\jstree\jstree.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\kanban\kanban.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\leaflet\leaflet.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\prismjs\prismjs.bundle49d8.css" />
+    <Content Include="assets\plugins\custom\prismjs\prismjs.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\tinymce\tinymce.bundle49d8.js" />
+    <Content Include="assets\plugins\custom\uppy\uppy.bundle49d8.css" />
+    <Content Include="assets\plugins\custom\uppy\uppy.bundle49d8.js" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-brands-400.svg" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-regular-400.svg" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-solid-900.svg" />
+    <Content Include="assets\plugins\global\fonts\flaticon2\Flaticon2.svg" />
+    <Content Include="assets\plugins\global\fonts\flaticon\Flaticon.svg" />
+    <Content Include="assets\plugins\global\fonts\keenthemes-icons\Ki.svg" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-brands-400.svg" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-regular-400.svg" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.svg" />
+    <Content Include="assets\plugins\global\fonts\socicon\socicon.svg" />
+    <Content Include="assets\plugins\global\plugins.bundle49d8.css" />
+    <Content Include="assets\plugins\global\plugins.bundle49d8.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\UniversitetDataContext.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cedveller.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cedveller.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\View Models\UniversitetViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Models\Cedveller.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Cedveller.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-brands-400.eot" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-brands-400.ttf" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-brands-400.woff" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-brands-400.woff2" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-brands-400d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-regular-400.eot" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-regular-400.ttf" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-regular-400.woff" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-regular-400.woff2" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-regular-400d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-solid-900.eot" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-solid-900.ttf" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-solid-900.woff" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-solid-900.woff2" />
+    <Content Include="assets\plugins\global\fonts\%40fortawesome\fa-solid-900d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\flaticon2\Flaticon2.eot" />
+    <Content Include="assets\plugins\global\fonts\flaticon2\Flaticon2.ttf" />
+    <Content Include="assets\plugins\global\fonts\flaticon2\Flaticon2.woff" />
+    <Content Include="assets\plugins\global\fonts\flaticon2\Flaticon2d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\flaticon\Flaticon.eot" />
+    <Content Include="assets\plugins\global\fonts\flaticon\Flaticon.ttf" />
+    <Content Include="assets\plugins\global\fonts\flaticon\Flaticon.woff" />
+    <Content Include="assets\plugins\global\fonts\flaticon\Flaticond41d.eot" />
+    <Content Include="assets\plugins\global\fonts\keenthemes-icons\Ki.eot" />
+    <Content Include="assets\plugins\global\fonts\keenthemes-icons\Ki.ttf" />
+    <Content Include="assets\plugins\global\fonts\keenthemes-icons\Ki.woff" />
+    <Content Include="assets\plugins\global\fonts\keenthemes-icons\Kid41d.eot" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-brands-400.eot" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-brands-400.ttf" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-brands-400.woff" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-brands-400.woff2" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-brands-400d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-regular-400.eot" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-regular-400.ttf" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-regular-400.woff" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-regular-400.woff2" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-regular-400d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.eot" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.ttf" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.woff" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900.woff2" />
+    <Content Include="assets\plugins\global\fonts\line-awesome\la-solid-900d41d.eot" />
+    <Content Include="assets\plugins\global\fonts\socicon\socicon.eot" />
+    <Content Include="assets\plugins\global\fonts\socicon\socicon.ttf" />
+    <Content Include="assets\plugins\global\fonts\socicon\socicon.woff" />
+    <Content Include="assets\plugins\global\fonts\socicon\socicond41d.eot" />
+    <Content Include="assets\plugins\global\fonts\summernote\summernote.eot" />
+    <Content Include="assets\plugins\global\fonts\summernote\summernote.ttf" />
+    <Content Include="assets\plugins\global\fonts\summernote\summernote.woff" />
+    <Content Include="assets\plugins\global\fonts\summernote\summernote.woff2" />
+    <Content Include="assets\plugins\global\fonts\summernote\summernoted41d.eot" />
+    <None Include="Models\Cedveller.dbml.layout">
+      <DependentUpon>Cedveller.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Views\shared\Admin.cshtml" />
+    <Content Include="Views\Admin\Universitet.cshtml" />
+    <Content Include="Views\Admin\UniversitetInsert.cshtml" />
+    <Content Include="Views\Admin\UniversitetUpdate.cshtml" />
+    <Content Include="Views\Admin\Fakulte.cshtml" />
+    <Content Include="Views\Admin\FakulteInsert.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60109</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44390/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

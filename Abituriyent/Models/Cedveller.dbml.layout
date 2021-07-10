@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.5, 8.5" name="Cedveller">
+  <DataContextMoniker Name="/CedvellerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="73905957-0717-4ed1-9818-2bc30c36c971" absoluteBounds="4.875, 0.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CedvellerDataContext/TehsilFormasi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18deceb8-e4ad-41da-aff5-d8c407e26b63" absoluteBounds="4.89, 1.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9519017-846a-4881-be19-45f3ca6da6d1" absoluteBounds="0.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CedvellerDataContext/Fakulte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02a64a93-5d14-48ce-ac05-094fab96fbd8" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd85b651-3b63-43d4-9b50-758a3e9d48ca" absoluteBounds="2.75, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CedvellerDataContext/Ixtisa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49428e6a-dd84-4ce7-9468-d66eaa59474f" absoluteBounds="2.765, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3263c9b-cc83-4097-906a-c3477d9f5bb2" absoluteBounds="7.875, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CedvellerDataContext/Qrup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="958db7fb-f117-4cca-84a5-6394f52e78ea" absoluteBounds="7.8900000000000006, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb9950c5-ad1c-41aa-b2c9-967a0f308503" absoluteBounds="10.25, 1, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CedvellerDataContext/Universitet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5da20139-e95b-4017-8f8f-8f090169fc73" absoluteBounds="10.265, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de12a6c9-b924-4e4f-a37e-2fa12983acab" absoluteBounds="5, 2.625, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/CedvellerDataContext/Umumi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef0e079f-6d4d-4e5d-88c1-a1b34ec4fba6" absoluteBounds="5.015, 3.085, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

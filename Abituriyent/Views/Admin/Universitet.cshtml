@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Universitet";
+    Layout = "~/Views/shared/Admin.cshtml";
+}
+
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" style="width:80%;margin-left:10%;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Universitetin Adı</th>
+                
+                <th colspan="2" class="text-center"><a href="~/Admin/UniversitetInsert"><i class="fa fa-plus fa-2x"></i></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Universitets)
+            {
+                <tr>
+                    <td>@(Model.Universitets.IndexOf(item)+1)</td>
+                     <td><a href="~/Admin/Fakulte" style="color:white;">@item.Ad</a></td>
+                    
+                    <td><a href="~/Admin/UniversitetDelete/@item.UniversitetId"><i class="far fa-trash-alt"></i></a></td>
+                    <td><a href="~/Admin/UniversitetUpdate/@item.UniversitetId"><i class="far fa-edit"></i></a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+

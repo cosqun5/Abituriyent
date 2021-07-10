@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Universitet" Class="CedvellerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-37EF8O4\SQLEXPRESS;Initial Catalog=Universitet;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="UniversitetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TehsilFormasi" Member="TehsilFormasis">
+    <Type Name="TehsilFormasi">
+      <Column Name="TehsilFormasiId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TAd" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fakulte" Member="Fakultes">
+    <Type Name="Fakulte">
+      <Column Name="FakulteId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FAd" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FTehsilFormasiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FUniversitetId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FIxtisasId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GirisBali" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ixtisas" Member="Ixtisas">
+    <Type Name="Ixtisa">
+      <Column Name="IxtisasId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IQrupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IAd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Qrup" Member="Qrups">
+    <Type Name="Qrup">
+      <Column Name="QrupId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="QAd" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Universitet" Member="Universitets">
+    <Type Name="Universitet">
+      <Column Name="UniversitetId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ad" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Umumi" Member="Umumis">
+    <Type Name="Umumi">
+      <Column Name="FakulteId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FAd" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FTehsilFormasiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FUniversitetId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FIxtisasId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GirisBali" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="UniversitetId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ad" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TehsilFormasiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TAd" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="IxtisasId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IQrupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IAd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QrupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QAd" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

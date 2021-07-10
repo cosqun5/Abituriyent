@@ -1,0 +1,57 @@
+﻿@model Abituriyent.Models.View_Models.UniversitetViewModel
+@{
+    ViewBag.Title = "FakulteInsert";
+    Layout = "~/Views/shared/Admin.cshtml";
+}
+
+<div class="card card-custom gutter-b example example-compact">
+    <form method="post" action="~/Admin/FakulteInsert">
+        <div class="card-body">
+
+             @*<div class="form-group" style="width:20%; float:left;margin-left:10px;">
+                <label>
+                     Universitetin Ad
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" placeholder="Universitetin Adı" name="Ad" />
+            </div>*@
+
+            <div class="form-group" style="width:20%; float:left;margin-left:10px;">
+                <label>
+                    Fakulte Ad
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" placeholder="Fakulte Adı" name="FAd" />
+            </div>
+
+            <div class="form-group" style="width:20%; float:left;margin-left:10px;">
+                <label>
+                    GirisBali
+                    <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" placeholder="GirisBali" name="GirisBali" />
+            </div>
+
+            <div class="form-group" style="width:20%; float:left;margin-left:10px;">
+                <label>
+                    Giriş balı
+                    <span class="text-danger">*</span>
+                </label>
+                <select class="form-control" name="FTehsilFormasiId">
+                    @foreach (var item in Model.tehsilFormasis)
+                    {
+                        <option value="@item.TehsilFormasiId">@item.TAd</option>
+                    }
+                </select>
+            </div>
+
+
+
+
+            <div class="duyme" style="float:left;width:100%; margin-bottom:20px;">
+                <button type="submit" value="Send message" class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+

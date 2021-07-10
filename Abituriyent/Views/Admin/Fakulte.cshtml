@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Fakulte";
+    Layout = "~/Views/shared/Admin.cshtml";
+}
+
+<div class="table-responsive">
+    <table class="table table-bordered table-dark" style="width:80%;margin-left:10%;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Fakultenin Adı</th>
+                <th>Əyani/Qiyabi</th>
+                <th>Giriş balı</th>
+
+
+                <th colspan="2" class="text-center"><a href="~/Admin/FakulteInsert"><i class="fa fa-plus fa-2x"></i></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.umumis)
+            {
+            <tr>
+                <td>@(Model.umumis.IndexOf(item)+1)</td>
+                <td>@item.FAd</td>
+                <td>@item.TAd</td>
+                <td>@item.GirisBali</td>
+
+                @*<td><a href="~/Admin/UniversitetDelete/@item.UniversitetId"><i class="far fa-trash-alt"></i></a></td>
+                <td><a href="~/Admin/UniversitetUpdate/@item.UniversitetId"><i class="far fa-edit"></i></a></td>*@
+            </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
